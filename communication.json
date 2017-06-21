@@ -1,0 +1,1061 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Vita Sackwell-West",
+      "relations": 11
+    },
+    {
+      "id": 1,
+      "name": "Edmund Gosse",
+      "relations": 10
+    },
+    {
+      "id": 2,
+      "name": "Violet Trefusis",
+      "relations": 3
+    },
+    {
+      "id": 3,
+      "name": "Harold Nicolson",
+      "relations": 6
+    },
+    {
+      "id": 4,
+      "name": "Henry Lascelles",
+      "relations": 2
+    },
+    {
+      "id": 5,
+      "name": "Augustus John",
+      "relations": 3
+    },
+    {
+      "id": 6,
+      "name": "John Middleton Murry",
+      "relations": 19
+    },
+    {
+      "id": 7,
+      "name": "Katherine Mansfield",
+      "relations": 15
+    },
+    {
+      "id": 8,
+      "name": "Maria Huxley",
+      "relations": 5
+    },
+    {
+      "id": 9,
+      "name": "Aldous Huxley",
+      "relations": 15
+    },
+    {
+      "id": 10,
+      "name": "D.H. Lawrence",
+      "relations": 23
+    },
+    {
+      "id": 11,
+      "name": "Frieda Lawrence",
+      "relations": 7
+    },
+    {
+      "id": 12,
+      "name": "Nancy Cunard",
+      "relations": 5
+    },
+    {
+      "id": 13,
+      "name": "John Scott Haldane",
+      "relations": 2
+    },
+    {
+      "id": 14,
+      "name": "Thomas Hardy",
+      "relations": 8
+    },
+    {
+      "id": 15,
+      "name": "Florence Hardy",
+      "relations": 3
+    },
+    {
+      "id": 16,
+      "name": "Ethelwyn Sylvia Jones",
+      "relations": 2
+    },
+    {
+      "id": 17,
+      "name": "Stephen Phillips",
+      "relations": 2
+    },
+    {
+      "id": 18,
+      "name": "John Drinkwater",
+      "relations": 5
+    },
+    {
+      "id": 19,
+      "name": "Gerald Kelly",
+      "relations": 3
+    },
+    {
+      "id": 20,
+      "name": "Hugh Walpole",
+      "relations": 8
+    },
+    {
+      "id": 21,
+      "name": "Sidney Colvin",
+      "relations": 2
+    },
+    {
+      "id": 22,
+      "name": "Frances Colvin",
+      "relations": 1
+    },
+    {
+      "id": 23,
+      "name": "Edward Marsh",
+      "relations": 11
+    },
+    {
+      "id": 24,
+      "name": "Lady Ottoline Morrell",
+      "relations": 14
+    },
+    {
+      "id": 25,
+      "name": "Philip Morrell",
+      "relations": 4
+    },
+    {
+      "id": 26,
+      "name": "Bertrand Russell",
+      "relations": 6
+    },
+    {
+      "id": 27,
+      "name": "Virginia Woolf",
+      "relations": 28
+    },
+    {
+      "id": 28,
+      "name": "Somerset Maugham",
+      "relations": 9
+    },
+    {
+      "id": 29,
+      "name": "Osbert Sitwell",
+      "relations": 4
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 27,
+      "type": "personal"
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "type": "personal"
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "type": "personal"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "personal"
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "type": "personal"
+    },
+    {
+      "source": 6,
+      "target": 11,
+      "type": "personal"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "type": "personal"
+    },
+    {
+      "source": 12,
+      "target": 9,
+      "type": "personal"
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "type": "personal"
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "type": "personal"
+    },
+    {
+      "source": 26,
+      "target": 24,
+      "type": "personal"
+    },
+    {
+      "source": 16,
+      "target": 28,
+      "type": "personal"
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 5,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 26,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 6,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 7,
+      "type": "correspondance"
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "type": "correspondance"
+    },
+    {
+      "source": 0,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 9,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 10,
+      "target": 9,
+      "type": "correspondance"
+    },
+    {
+      "source": 7,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 25,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 14,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 15,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 20,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 3,
+      "type": "correspondance"
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "type": "correspondance"
+    },
+    {
+      "source": 14,
+      "target": 6,
+      "type": "correspondance"
+    },
+    {
+      "source": 7,
+      "target": 6,
+      "type": "correspondance"
+    },
+    {
+      "source": 10,
+      "target": 6,
+      "type": "correspondance"
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 9,
+      "type": "correspondance"
+    },
+    {
+      "source": 11,
+      "target": 6,
+      "type": "correspondance"
+    },
+    {
+      "source": 10,
+      "target": 8,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 8,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 9,
+      "type": "correspondance"
+    },
+    {
+      "source": 23,
+      "target": 10,
+      "type": "correspondance"
+    },
+    {
+      "source": 11,
+      "target": 10,
+      "type": "correspondance"
+    },
+    {
+      "source": 23,
+      "target": 11,
+      "type": "correspondance"
+    },
+    {
+      "source": 26,
+      "target": 10,
+      "type": "correspondance"
+    },
+    {
+      "source": 24,
+      "target": 11,
+      "type": "correspondance"
+    },
+    {
+      "source": 18,
+      "target": 1,
+      "type": "correspondance"
+    },
+    {
+      "source": 28,
+      "target": 19,
+      "type": "correspondance"
+    },
+    {
+      "source": 1,
+      "target": 21,
+      "type": "correspondance"
+    },
+    {
+      "source": 1,
+      "target": 13,
+      "type": "correspondance"
+    },
+    {
+      "source": 14,
+      "target": 1,
+      "type": "correspondance"
+    },
+    {
+      "source": 23,
+      "target": 1,
+      "type": "correspondance"
+    },
+    {
+      "source": 23,
+      "target": 18,
+      "type": "correspondance"
+    },
+    {
+      "source": 20,
+      "target": 28,
+      "type": "correspondance"
+    },
+    {
+      "source": 28,
+      "target": 23,
+      "type": "correspondance"
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "type": "correspondance"
+    },
+    {
+      "source": 12,
+      "target": 29,
+      "type": "correspondance"
+    },
+    {
+      "source": 29,
+      "target": 28,
+      "type": "correspondance"
+    },
+    {
+      "source": 3,
+      "target": 29,
+      "type": "correspondance"
+    },
+    {
+      "source": 20,
+      "target": 18,
+      "type": "correspondance"
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 26,
+      "type": "correspondance"
+    },
+    {
+      "source": 5,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 26,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 6,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 7,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 0,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 9,
+      "type": "correspondance"
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 7,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 25,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 14,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 15,
+      "type": "correspondance"
+    },
+    {
+      "source": 27,
+      "target": 20,
+      "type": "correspondance"
+    },
+    {
+      "source": 3,
+      "target": 27,
+      "type": "correspondance"
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "type": "correspondance"
+    },
+    {
+      "source": 6,
+      "target": 14,
+      "type": "correspondance"
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "type": "correspondance"
+    },
+    {
+      "source": 6,
+      "target": 10,
+      "type": "correspondance"
+    },
+    {
+      "source": 10,
+      "target": 7,
+      "type": "correspondance"
+    },
+    {
+      "source": 9,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 6,
+      "target": 11,
+      "type": "correspondance"
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "type": "correspondance"
+    },
+    {
+      "source": 8,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 9,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 10,
+      "target": 23,
+      "type": "correspondance"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "type": "correspondance"
+    },
+    {
+      "source": 11,
+      "target": 23,
+      "type": "correspondance"
+    },
+    {
+      "source": 10,
+      "target": 26,
+      "type": "correspondance"
+    },
+    {
+      "source": 11,
+      "target": 24,
+      "type": "correspondance"
+    },
+    {
+      "source": 1,
+      "target": 18,
+      "type": "correspondance"
+    },
+    {
+      "source": 19,
+      "target": 28,
+      "type": "correspondance"
+    },
+    {
+      "source": 21,
+      "target": 1,
+      "type": "correspondance"
+    },
+    {
+      "source": 13,
+      "target": 1,
+      "type": "correspondance"
+    },
+    {
+      "source": 1,
+      "target": 14,
+      "type": "correspondance"
+    },
+    {
+      "source": 1,
+      "target": 23,
+      "type": "correspondance"
+    },
+    {
+      "source": 18,
+      "target": 23,
+      "type": "correspondance"
+    },
+    {
+      "source": 28,
+      "target": 20,
+      "type": "correspondance"
+    },
+    {
+      "source": 23,
+      "target": 28,
+      "type": "correspondance"
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "type": "correspondance"
+    },
+    {
+      "source": 29,
+      "target": 12,
+      "type": "correspondance"
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "type": "correspondance"
+    },
+    {
+      "source": 29,
+      "target": 3,
+      "type": "correspondance"
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "type": "correspondance"
+    },
+    {
+      "source": 23,
+      "target": 20,
+      "type": "correspondance"
+    },
+    {
+      "source": 1,
+      "target": 17,
+      "type": "review"
+    },
+    {
+      "source": 10,
+      "target": 25,
+      "type": "review"
+    },
+    {
+      "source": 10,
+      "target": 28,
+      "type": "review"
+    },
+    {
+      "source": 10,
+      "target": 14,
+      "type": "review"
+    },
+    {
+      "source": 9,
+      "target": 6,
+      "type": "review"
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "type": "review"
+    },
+    {
+      "source": 10,
+      "target": 9,
+      "type": "review"
+    },
+    {
+      "source": 7,
+      "target": 20,
+      "type": "review"
+    },
+    {
+      "source": 7,
+      "target": 0,
+      "type": "review"
+    },
+    {
+      "source": 7,
+      "target": 28,
+      "type": "review"
+    },
+    {
+      "source": 10,
+      "target": 6,
+      "type": "review"
+    },
+    {
+      "source": 10,
+      "target": 7,
+      "type": "review"
+    },
+    {
+      "source": 6,
+      "target": 10,
+      "type": "review"
+    },
+    {
+      "source": 7,
+      "target": 0,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 20,
+      "type": "review"
+    },
+    {
+      "source": 20,
+      "target": 27,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 14,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 5,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 6,
+      "type": "review"
+    },
+    {
+      "source": 6,
+      "target": 27,
+      "type": "review"
+    },
+    {
+      "source": 7,
+      "target": 27,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 7,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 10,
+      "type": "review"
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "type": "review"
+    },
+    {
+      "source": 10,
+      "target": 9,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 9,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 1,
+      "type": "review"
+    },
+    {
+      "source": 27,
+      "target": 3,
+      "type": "review"
+    },
+    {
+      "source": 9,
+      "target": 27,
+      "type": "review"
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "type": "publishing"
+    },
+    {
+      "source": 27,
+      "target": 6,
+      "type": "publishing"
+    },
+    {
+      "source": 27,
+      "target": 26,
+      "type": "publishing"
+    },
+    {
+      "source": 27,
+      "target": 12,
+      "type": "publishing"
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "type": "publishing"
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "type": "publishing"
+    },
+    {
+      "source": 29,
+      "target": 12,
+      "type": "publishing"
+    },
+    {
+      "source": 23,
+      "target": 0,
+      "type": "publishing"
+    },
+    {
+      "source": 23,
+      "target": 1,
+      "type": "publishing"
+    },
+    {
+      "source": 23,
+      "target": 10,
+      "type": "publishing"
+    },
+    {
+      "source": 23,
+      "target": 18,
+      "type": "publishing"
+    },
+    {
+      "source": 10,
+      "target": 14,
+      "type": "study"
+    },
+    {
+      "source": 6,
+      "target": 10,
+      "type": "study"
+    },
+    {
+      "source": 28,
+      "target": 19,
+      "type": "study"
+    },
+    {
+      "source": 9,
+      "target": 24,
+      "type": "rac"
+    },
+    {
+      "source": 20,
+      "target": 27,
+      "type": "rac"
+    },
+    {
+      "source": 20,
+      "target": 28,
+      "type": "rac"
+    },
+    {
+      "source": 10,
+      "target": 9,
+      "type": "rac"
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "type": "rac"
+    },
+    {
+      "source": 27,
+      "target": 0,
+      "type": "rac"
+    },
+    {
+      "source": 27,
+      "target": 1,
+      "type": "rac"
+    },
+    {
+      "source": 27,
+      "target": 2,
+      "type": "rac"
+    },
+    {
+      "source": 27,
+      "target": 3,
+      "type": "rac"
+    },
+    {
+      "source": 27,
+      "target": 4,
+      "type": "rac"
+    },
+    {
+      "source": 9,
+      "target": 5,
+      "type": "rac"
+    },
+    {
+      "source": 9,
+      "target": 6,
+      "type": "rac"
+    },
+    {
+      "source": 9,
+      "target": 7,
+      "type": "rac"
+    },
+    {
+      "source": 9,
+      "target": 8,
+      "type": "rac"
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "type": "rac"
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "type": "rac"
+    },
+    {
+      "source": 9,
+      "target": 13,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 14,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 15,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 16,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 17,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 18,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 19,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 20,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 21,
+      "type": "rac"
+    },
+    {
+      "source": 28,
+      "target": 22,
+      "type": "rac"
+    },
+    {
+      "source": 29,
+      "target": 23,
+      "type": "rac"
+    },
+    {
+      "source": 29,
+      "target": 24,
+      "type": "rac"
+    },
+    {
+      "source": 29,
+      "target": 1,
+      "type": "rac"
+    },
+    {
+      "source": 10,
+      "target": 24,
+      "type": "rac"
+    },
+    {
+      "source": 10,
+      "target": 25,
+      "type": "rac"
+    },
+    {
+      "source": 10,
+      "target": 26,
+      "type": "rac"
+    },
+    {
+      "source": 10,
+      "target": 6,
+      "type": "rac"
+    },
+    {
+      "source": 10,
+      "target": 7,
+      "type": "rac"
+    }
+  ]
+}

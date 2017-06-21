@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<style>
+	 html, body {
+  height: 100%;
+  width: 100%;
+  color: #444;
+  padding: 10px;
+}
+#heading{
+  border-bottom: 2px solid black;
+}
+h1{
+  font-family: Georgia;
+  font-size:20px;
+  font-color:black;
+}
+#principal {
+  padding-top:30px;
+  position: relative; 
+  top: 20px;
+  right: 0px;
+  width: 800px;
+  height: 500px;
+}
+#legend{
+  border:2px solid #9ff5cf;
+  margin:50px 30px 100px 20px;
+  padding:10px 10px 10px 10px;
+  width: 200px;
+  height:180px;
+  float:right;
+  display:none;
+  }
+
+input[type=checkbox] {
+	margin-top:80px;
+  margin-left:26px;
+}
+
+#legend1{
+  border:2px solid #9ff5cf;
+  margin-top:65px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  padding-left:0px;
+  padding-right:10px;
+  padding-bottom:10px;
+  float:right;
+  display:none;
+  }
+
+.btn {
+  font-family: Georgia;
+  color: #000000;
+  font-size: 15px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #9ff5cf 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #9ff5cf;
+  text-decoration: none;
+}
+
+#networkViz {
+  position:absolute;
+  top:50px;
+  right: 12px;
+ }
+
+#networkViz1 {
+  border:3px solid #210345;
+  position:absolute;
+  top:100px;
+  right: 70px;
+  border-radius:30px;
+ }
+
+
+path {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+.personal {
+  stroke: #8CB202;
+}
+
+.correspondance {
+  stroke: #008C74;
+}
+
+.review {
+  stroke: #E5DD00;
+}
+
+.publishing {
+  stroke: #004C66;
+}
+
+.study {
+  stroke: #59A66D;
+}
+
+.rac {
+  stroke: #430040;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: black;
+  stroke-width: 2.5px;
+}
+
+text {
+  fill: #000;
+  font-family: Georgia;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  height: 40px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: #F3FBA0;
+  border: 0px;
+  pointer-events: none;
+}
+
+.node1 circle {
+  stroke: black	;
+  stroke-width: 0px;
+}
+
+input[type=radio] {
+	visibility: hidden;
+}
+.input-group label{
+  display: block;
+  margin-bottom: -20px;
+  margin-left:25px;
+	width: 15px;
+	height: 15px;
+	border-radius: 80px;
+	transition: all .5s ease;
+	cursor: pointer;
+  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+input[type="radio"]:checked+label{
+  border-color: black;
+  border-style: solid;
+}
+label[for=chk1] {
+  background: linear-gradient(to bottom, #430040, #008C74, #008C74,#E5DD00);
+}
+label[for=chk2] {
+  background-color: #8CB202;
+}
+label[for=chk3] {
+  background-color: #008C74;
+}
+label[for=chk4] {
+  background-color: #E5DD00;
+}
+label[for=chk5] {
+  background-color: #004C66;
+}
+label[for=chk6] {
+  background-color: #59A66D;
+}
+label[for=chk7] {
+  background-color: #430040;
+}
+.buttons{
+  margin-left:30px;
+  margin-right:200px;
+  display:inline-block;
+  width: 120px;
+}
+
+.legend_list { list-style: none; }
+.legend_list li { float: left; margin-right: 10px; }
+.legend_list .novels { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+.legend_list .actors { border: 1px solid #ccc; float: left; border-radius: 7px; width: 12px; height: 12px; margin: 2px; }
+.legend_list #people { background-color: #9febf5; }
+.legend_list #personnages { background-color: #9ff5cf; }
+.legend_list #woolf { background-color: #112F41; }
+.legend_list #huxley { background-color: #068587; }
+.legend_list #maugham { background-color: #4FB99F; }
+.legend_list #sitwell { background-color: #F2C434; }
+.legend_list #lawrence { background-color: #ED553B; }
+
+#text{
+  display: none;
+  text-align:justify;
+}
+
+#text1{
+  display: none;
+  text-align:justify;
+}
+
+
+</style>
+
+</head>
+<body>
+<div id="heading"><h1>Roman à clef and Communication Networks in the 1920-30s British Literary Field</h1></div>
+<div id="principal"> 
+  Choose a graph:
+ 
+   <input type="button" class="btn" value="communication map" id="com"/>
+   <input type="button" class="btn" value="who is who" id="wiw"/>
+
+  <div id="legend">
+    Choose the relations:
+    <div class="input-group" id="filters">
+         <input type="radio" name="filter" value="all" id="chk1" checked="checked"><label for="chk1"> <span class="buttons">All</span></label>
+         <input type="radio" name="filter" value="personal" id="chk2"><label for="chk2"><span class="buttons"> Personal</span></label>
+         <input type="radio" name="filter" value="correspondance" id="chk3"> <label for="chk3"><span class="buttons">Correspondence</span></label>
+         <input type="radio" name="filter" value="review" id="chk4"> <label for="chk4"><span class="buttons">Review</span></label>
+         <input type="radio" name="filter" value="publishing" id="chk5"><label for="chk5"> <span class="buttons">Editing/Publishing</span> </label>
+       
+        <input type="radio" name="filter" value="study" id="chk6"> <label for="chk6"> <span class="buttons"> Study</span></label>  
+        <input type="radio" name="filter" value="rac" id="chk7"><label for="chk7"><span class="buttons"> Roman à clef</span></label>
+    </div>
+    <div id="names">
+    <input type="checkbox" name="names" id="namesId" /><label for="namesId"><span id="namesSpan">Show names </span></label>
+    </div>
+  </div>
+
+  <div id="legend1">
+    <ul class="legend_list">
+        <li><span class="actors" id="people"></span> Persons</li> <br />
+        <li><span class="actors" id="personnages"></span> Characters</li><br />
+        <li><span class="novels" id="woolf"></span> <i>Orlando</i></li><br />
+        <li><span class="novels" id="huxley"></span><i>Point Counter Point</i> </li><br />
+        <li><span class="novels" id="maugham"></span> <i>Cakes and Ale</i></li><br />
+        <li><span class="novels" id="sitwell"></span> <i>Triple Fugue</i></li><br />
+        <li><span class="novels" id="lawrence"></span> <i>Women in Love</i></li>
+    </ul>
+  </div>
+
+  <div id="text">
+    <h4> Literary communication in Great Britain of the 1920-30s </h4>
+      Nodes size reflects the number of connections, which this or that person have (influence index). Arrows mirror the directionality of relationships: who and of whom wrote a novel/ a review/ a study etc.
+      <br />  
+      <br />
+      Click on node to look into all the relations of the concrete person.
+  </div>
+  <div id="text1">
+    <h4> Who is who in modernist romans à clefs? </h4>
+      This graph represents correspondences between the participants of literary field and the characters of the selected romans à clefs.  Who was the source/ inspiration for this or that personage? And at the same time under the guise of what personnages this or that writer, artist, critic, editor is represented? There are two types of nodes representing characters and actors of literary field; edges are colored according to the novel, which they represent. 
+      <br />
+      <br />
+      Guide the cursor on nodes in order to see the name of the person/character.
+  </div>
+</div> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+<script>
+//LAYOUT 1.
+let button = document.getElementById("com");
+button.addEventListener("click", loadGraph);
+function loadGraph(){
+//  hide layout 2 and texts associated with it, display layout 1 and its texts
+  d3.select("svg").remove();
+  d3.select("#text1").style("display", "none");
+  d3.select("#legend1").style("display", "none");
+  d3.select("#legend").style("display", "initial");
+  d3.select("#text").style("display", "initial");
+  let width = 550,
+    height = 450;
+  let path;
+  let node;
+  
+//set up the simulation 
+  let simulation = d3.forceSimulation()
+    .force("link", d3.forceLink()
+         .distance(200)
+         .strength(0.1))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("collide",d3.forceCollide( function(d){return d.relations + 20 }).iterations(16) )
+    .force("charge", d3.ForceManyBody);
+
+//create SVG
+  let svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("id","networkViz");
+
+//load external data
+  d3.json("communication.json", function(error, graph) {
+    if (error) throw error;
+
+// append arrows (source: http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/)
+  svg.append("svg:defs").selectAll("marker")
+    .data(["end"])    
+    .enter().append("svg:marker")    
+    .attr("id", String)
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 15)
+    .attr("refY", 0)
+    .attr("markerWidth", 9)
+    .attr("markerHeight", 7)
+    .attr("orient", "auto")
+    .append("svg:path")
+    .attr("d", "M0,-5L10,0L0,5");
+
+// add links and arrows
+  path = svg.append("svg:g").selectAll("path") 
+    .data(graph.links)
+    .enter().append("path")
+    .attr("class", function(d) { return d.type; })
+    .attr("marker-end", "url(#end)")
+
+// define the nodes
+  node = svg.selectAll(".node")
+    .data(graph.nodes)
+    .enter().append("g")
+    .attr("class", "node")
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout)
+    .on("click", connectedNodes)
+    .call(d3.drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended));
+
+//functions for highlighting selected nodes
+  function mouseover() {
+    d3.select(this).select("circle").transition()
+      .duration(250)
+      .attr('r', 10)
+      .style("fill", "white");
+    d3.select(this).select("text").transition()
+      .duration(250)
+      .style('font-size', 21);
+    }
+
+  function mouseout() {
+   d3.select(this).select("circle").transition()
+      .duration(250)
+      .attr('r', 5)
+  d3.select(this).select("text").transition()
+      .duration(250)
+      .style('font-size', 12);
+    }
+
+// add nodes and define the radius of each node
+  node.append("circle")
+    .attr("r", function(d){return Math.round(d.relations)}); 
+
+// add labels 
+  let checkbox = document.querySelector("input[name=names]");
+  checkbox.onchange = function() {
+      if(this.checked) {
+        node.append("text")
+          .attr("x", 12)
+          .attr("dy", ".35em")
+          .text(function(d) { return d.name; });
+          /*path.style("opacity", 0.6);*/
+      } else {
+        svg.selectAll("text").remove();
+        path.style("opacity", 1);
+      }
+  }
+  
+//add data and tick instructions
+  simulation
+    .nodes(graph.nodes)
+    .on("tick", tick);
+
+  simulation.force("link")
+    .links(graph.links);
+
+  // add curved lines
+  function tick() {
+      path.attr("d", function(d) {
+       let dx = d.target.x - d.source.x,
+           dy = d.target.y - d.source.y,
+           dr = Math.sqrt(dx * dx + dy * dy);
+           return "M" + 
+           d.source.x + "," + 
+           d.source.y + "A" + 
+           dr + "," + dr + " 0 0,1 " + 
+           d.target.x + "," + 
+           d.target.y;
+    });
+  
+  // adjusting the end points of paths in order to adjust the position of arrows (source: https://stackoverflow.com/questions/28101774/d3-force-layout-moving-arrows-along-links-depending-on-node-radius)
+  function linkArc(d) {
+    let targetX = d.target.x - d.target.started,
+      targetY = d.target.y - d.target.started,
+      dx = targetX - d.source.x,
+      dy = targetY - d.source.y,
+      dr = (d.straight == 0)?Math.sqrt(dx * dx + dy * dy):0;
+    return "M" + d.source.x + "," + d.source.y +
+       " L " + targetX + "," + targetY;
+}
+
+  node
+    .attr("transform", function(d) { 
+	   return "translate(" + d.x + "," + d.y + ")"; });
+    }
+
+
+// filter functions
+    d3.selectAll("input[name=filter]").on("change", function(d){
+    // value of selected radio
+      let value = this.value;
+    // style for all nodes and links
+      node.style("opacity", 1);
+      path.style("opacity", 1);
+   // hide those that aren't chosen
+    if (value !== "all"){
+       path.filter(function(d){
+          return d.type != value;
+        })
+       .style("opacity", "0.1");
+       }
+});
+
+
+// highlighting nodes and its neighbours (source: https://stackoverflow.com/questions/8739072/highlight-selected-node-its-links-and-its-children-in-a-d3-force-directed-grap)
+  let toggle = 0;
+//Create an array for neighbours search
+  let linkedByIndex = {};
+    for (i = 0; i < graph.nodes.length; i++) {
+    linkedByIndex[i + "," + i] = 1;
+};
+  graph.links.forEach(function (d) {
+    linkedByIndex[d.source.index + "," + d.target.index] = 1;
+});
+// look up whether a pair are neighbours
+function neighboring(a, b) {
+    return linkedByIndex[a.index + "," + b.index];
+}
+function connectedNodes() {
+    if (toggle == 0) {
+        //hide all but the neighbouring nodes
+        d = d3.select(this).node().__data__;
+        node.style("opacity", function (o) {
+            return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
+        });
+        path.style("opacity", function (o) {
+            return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
+        })
+        toggle = 1;
+    } else {
+        //again show all the nodes
+        node.style("opacity", 1);
+        path.style("opacity", 1);
+        toggle = 0;
+    }
+}
+});
+ //drag and drop functions 
+  function dragstarted(d) {
+   if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+   d.fx = d.x;
+   d.fy = d.y;
+  }
+
+  function dragged(d) {
+   d.fx = d3.event.x;
+   d.fy = d3.event.y;
+  }
+
+  function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+   d.fx = null;
+   d.fy = null;
+  }
+};
+
+// LAYOUT 2.
+let button1 = document.getElementById("wiw");
+button1.addEventListener("click", loadGraph1);
+function loadGraph1(){
+  d3.select("svg").remove();
+  d3.select("#legend").style("display", "none");
+  d3.select("#text").style("display", "none");
+  d3.select("#names").style("display", "none");
+  d3.select("#text1").style("display", "initial");
+  d3.select("#legend1").style("display", "initial");
+  let width1 = 350;
+  let height1 = 350;
+  
+  //create DIV for tooltips
+  let div = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+  
+  //append SVG
+  let svg1 = d3.select("body").append("svg")
+    .attr("width", width1)
+    .attr("height", height1)
+    .attr("id","networkViz1");
+  let radius = 15; 
+
+//load external data
+  d3.json("WhoIsWho.json", function(error, graph1) {
+  if (error) throw error;
+
+//set up the simulation 
+  let simulation = d3.forceSimulation()
+	  .nodes(graph1.nodes_data);
+  let link_force =  d3.forceLink(graph1.links_data)           
+  let charge_force = d3.forceManyBody()
+    .strength(-100);    
+  let center_force = d3.forceCenter(width1 / 2, height1 / 2);  
+  
+// arrange person and character nodes
+// source: http://www.puzzlr.org/force-directed-graph-custom-forces/  
+function splitting_force() { 
+  for (let i = 0, n = graph1.nodes_data.length; i < n; ++i) {
+    curr_node = graph1.nodes_data[i];
+    if(curr_node.type == "character"){
+        curr_node.x += 5;
+    } else if(curr_node.type == "person"){
+        curr_node.x -= 5;
+      }    
+    }
+  }
+
+  simulation
+      .force("charge_force", charge_force)
+      .force("center_force", center_force)
+      .force("links",link_force)
+      .force("collide",d3.forceCollide( function(d){return radius}).iterations(16) )
+      .force("splitting",splitting_force);
+
+//add tick instructions 
+  simulation.on("tick", tickActions );
+  
+//append new links 
+let link1 = svg1.append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(graph1.links_data)
+    .enter().append("line")
+      .attr("stroke-width", 2)
+      .style("stroke", linkColour);        
+
+//append new nodes 
+let node1 = svg1.append("g")
+        .attr("class", "node1") 
+        .selectAll("circle")
+        .data(graph1.nodes_data)
+        .enter()
+        .append("circle")
+        .attr("r", radius)
+        .attr("fill", circleColour)
+        //functions showing tooltips
+        .on("mouseover", function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.name);
+         })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0)
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+          })
+;
+// drag and drop functions
+  let drag_handler = d3.drag()
+	 .on("start", dragstarted1)
+	 .on("drag", dragged1)
+	 .on("end", dragended1);	
+	
+  drag_handler(node1)
+
+  function dragstarted1(d) {
+   if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+   d.fx = d.x;
+   d.fy = d.y;
+ }
+
+ function dragged1(d) {
+   d.fx = d3.event.x;
+   d.fy = d3.event.y;
+ }
+
+ function dragended1(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+   d.fx = null;
+   d.fy = null;
+ }
+
+//Functions
+//Choosing the circle color
+  function circleColour(d){
+	  if(d.type =="character"){
+		return "#9ff5cf";
+	 } else {
+		return "#9febf5";
+	 }
+  }
+
+//Choosing the line colour 
+function linkColour(d){
+	if(d.value == 1){
+		return "#112F41";
+	} 
+  else if(d.value == 2){
+		return "#068587";
+	}
+ else if(d.value == 3){
+		return "#4FB99F";
+	}
+  else if(d.value == 4){
+		return "#F2C434";
+	}
+  else {
+		return "#ED553B";
+	}
+}
+
+//tick functions
+function tickActions() {
+      node1
+        .attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width1 - radius, d.x)); })
+        .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height1 - radius, d.y)); });
+        
+    link1
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+	  } 
+});
+}
+
+</script>
+
+</body>
+</html>

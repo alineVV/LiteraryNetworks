@@ -1,0 +1,542 @@
+{
+  "nodes_data": [
+    {
+      "id": 0,
+      "name": "Vita Sackwell-West",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 1,
+      "name": "Edmund Gosse",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 2,
+      "name": "Violet Trefusis",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 3,
+      "name": "Harold Nicolson",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 4,
+      "name": "Henry Lascelles",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 5,
+      "name": "Augustus John",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 6,
+      "name": "John Middleton Murry",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 7,
+      "name": "Katherine Mansfield",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 8,
+      "name": "Maria Huxley",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 9,
+      "name": "Aldous Huxley",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 10,
+      "name": "D.H. Lawrence",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 11,
+      "name": "Frieda Lawrence",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 12,
+      "name": "Charles Baudlaire",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 13,
+      "name": "Nancy Cunard",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 14,
+      "name": "J.S.Haldane",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 15,
+      "name": "Thomas Hardy",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 16,
+      "name": "Florence Hardy",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 17,
+      "name": "Ethelwyn Sylvia Jones",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 18,
+      "name": "Stephen Phillips",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 19,
+      "name": "John Drinkwater",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 20,
+      "name": "Gerald Kelly",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 21,
+      "name": "Hugh Walpole",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 22,
+      "name": "Sidney Colvin",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 23,
+      "name": "Lady Colvin",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 24,
+      "name": "Edward Marsh",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 25,
+      "name": "Lady Ottoline Morrell",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 26,
+      "name": "Philip Morrell",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 27,
+      "name": "Bertrand Russell",
+      "type": "person",
+      "group": "real world"
+    },
+    {
+      "id": 28,
+      "name": "Orlando",
+      "type": "character",
+      "group": "orlando"
+    },
+    {
+      "id": 29,
+      "name": "Nicholas Green",
+      "type": "character",
+      "group": "orlando"
+    },
+    {
+      "id": 30,
+      "name": "Princess Sasha",
+      "type": "character",
+      "group": "orlando"
+    },
+    {
+      "id": 31,
+      "name": "Marmaduke Bonthrop Shelmerdine",
+      "type": "character",
+      "group": "orlando"
+    },
+    {
+      "id": 32,
+      "name": "Archduchess Harriet/ Archduke Harry",
+      "type": "character",
+      "group": "orlando"
+    },
+    {
+      "id": 33,
+      "name": "John Bidlake",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 34,
+      "name": "Denis Burlap",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 35,
+      "name": "Susan Paley",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 36,
+      "name": "Elinor Quarles",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 37,
+      "name": "Philip Quarles",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 38,
+      "name": "Mark Rampion",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 39,
+      "name": "Mary Rampion",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 40,
+      "name": "Spandrel",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 41,
+      "name": "Lucy Tantamount",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 42,
+      "name": "Edward Tantamount",
+      "type": "character",
+      "group": "point counter point"
+    },
+    {
+      "id": 43,
+      "name": "Edward Driffield",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 44,
+      "name": "Amy Driffield",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 45,
+      "name": "Rose Driffield",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 46,
+      "name": "Jasper Gibbons",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 47,
+      "name": "Lionel Hillier",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 48,
+      "name": "Alroy Kear",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 49,
+      "name": "Allgood Newton",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 50,
+      "name": "Barton Trafford",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 51,
+      "name": "Mrs. Barton Trafford",
+      "type": "character",
+      "group": "cakes and ale"
+    },
+    {
+      "id": 52,
+      "name": "James Criscross",
+      "type": "character",
+      "group": "triple fugue"
+    },
+    {
+      "id": 53,
+      "name": "Matthew Dean",
+      "type": "character",
+      "group": "triple fugue"
+    },
+    {
+      "id": 54,
+      "name": "Lady Septuagesima Goodley",
+      "type": "character",
+      "group": "triple fugue"
+    },
+    {
+      "id": 55,
+      "name": "Rupert Birkin",
+      "type": "character",
+      "group": "women in love"
+    },
+    {
+      "id": 56,
+      "name": "Gudrun Brangwen",
+      "type": "character",
+      "group": "women in love"
+    },
+    {
+      "id": 57,
+      "name": "Gerald Crich",
+      "type": "character",
+      "group": "women in love"
+    },
+    {
+      "id": 58,
+      "name": "Hermione Roddice",
+      "type": "character",
+      "group": "women in love"
+    },
+    {
+      "id": 59,
+      "name": "Alexander Roddice",
+      "type": "character",
+      "group": "women in love"
+    },
+    {
+      "id": 60,
+      "name": "Joshua Mattheson",
+      "type": "character",
+      "group": "women in love"
+    }
+  ],
+  "links_data": [
+    {
+      "source": 0,
+      "target": 28,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 29,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 30,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 31,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 32,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 33,
+      "value": 2
+    },
+    {
+      "source": 6,
+      "target": 34,
+      "value": 2
+    },
+    {
+      "source": 7,
+      "target": 35,
+      "value": 2
+    },
+    {
+      "source": 8,
+      "target": 36,
+      "value": 2
+    },
+    {
+      "source": 9,
+      "target": 37,
+      "value": 2
+    },
+    {
+      "source": 10,
+      "target": 38,
+      "value": 2
+    },
+    {
+      "source": 11,
+      "target": 39,
+      "value": 2
+    },
+    {
+      "source": 12,
+      "target": 40,
+      "value": 2
+    },
+    {
+      "source": 13,
+      "target": 41,
+      "value": 2
+    },
+    {
+      "source": 14,
+      "target": 42,
+      "value": 2
+    },
+    {
+      "source": 15,
+      "target": 43,
+      "value": 3
+    },
+    {
+      "source": 16,
+      "target": 44,
+      "value": 3
+    },
+    {
+      "source": 17,
+      "target": 45,
+      "value": 3
+    },
+    {
+      "source": 18,
+      "target": 46,
+      "value": 3
+    },
+    {
+      "source": 19,
+      "target": 46,
+      "value": 3
+    },
+    {
+      "source": 20,
+      "target": 47,
+      "value": 3
+    },
+    {
+      "source": 21,
+      "target": 48,
+      "value": 3
+    },
+    {
+      "source": 1,
+      "target": 49,
+      "value": 3
+    },
+    {
+      "source": 22,
+      "target": 50,
+      "value": 3
+    },
+    {
+      "source": 23,
+      "target": 51,
+      "value": 3
+    },
+    {
+      "source": 1,
+      "target": 52,
+      "value": 4
+    },
+    {
+      "source": 24,
+      "target": 53,
+      "value": 4
+    },
+    {
+      "source": 25,
+      "target": 54,
+      "value": 4
+    },
+    {
+      "source": 10,
+      "target": 55,
+      "value": 5
+    },
+    {
+      "source": 7,
+      "target": 56,
+      "value": 5
+    },
+    {
+      "source": 6,
+      "target": 57,
+      "value": 5
+    },
+    {
+      "source": 25,
+      "target": 58,
+      "value": 5
+    },
+    {
+      "source": 26,
+      "target": 59,
+      "value": 5
+    },
+    {
+      "source": 27,
+      "target": 60,
+      "value": 5
+    }
+  ]
+}
