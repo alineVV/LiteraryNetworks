@@ -17,4 +17,4 @@ The “who is who” graph represents correspondences between the actors of lite
 
 Taken together, these two graphs enable the user to see the place of the *roman à clef* among other ways of communication between writers, critics, artists and bohemians of the 1920-30s in Britain.
 
-
+This project is a part of the course on data visualisation (Isaac Pante, section of language science and information) within the framework of the interfaculty Master's program in Digital Humanities at UNIL. (Ce projet a été réalisé dans le cadre du cours de visualisation de données (Isaac Pante, section des sciences du langage et de l'information) suivi au sein du master interfacultaire en Humanités numériques de l'UNIL).
