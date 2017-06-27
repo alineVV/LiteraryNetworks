@@ -1,5 +1,5 @@
 # LiteraryNetworks
-## [See demo here!](https://s.codepen.io/AlineV/debug/wedLYx/NjkYzwpqaGnM)
+## [See demo here!](https://alinevv.github.io/LiteraryNetworks/)
 
 ### *Roman à clef* and Communication Networks in the 1920-30s British Literary Field
 
