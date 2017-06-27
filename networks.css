@@ -1,0 +1,210 @@
+
+   html, body {
+  height: 100%;
+  width: 100%;
+  color: #444;
+  padding: 10px;
+}
+#heading{
+  border-bottom: 2px solid black;
+}
+h1{
+  font-family: Georgia;
+  font-size:20px;
+  font-color:black;
+}
+#principal {
+  padding-top:30px;
+  position: relative; 
+  top: 20px;
+  right: 0px;
+  width: 650px;
+  height: 500px;
+  text-align:justify;
+}
+#legend{
+  border:2px solid #9ff5cf;
+  margin:40px 30px 100px 110px;
+  padding:10px 10px 10px 10px;
+  width: 200px;
+  height:180px;
+  float:left;
+  display:none;
+  }
+
+input[type=checkbox] {
+  margin-top:80px;
+  margin-left:26px;
+}
+
+#legend1{
+  border:2px solid #9ff5cf;
+  margin-top:40px;
+  margin-bottom: 100px;
+  margin-left: 110px;
+  padding-left:0px;
+  padding-right:10px;
+  padding-bottom:10px;
+  float:left;
+  display:none;
+  }
+
+.btn {
+  font-family: Georgia;
+  color: #000000;
+  font-size: 15px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #9ff5cf 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #9ff5cf;
+  text-decoration: none;
+}
+
+#networkViz {
+  position:absolute;
+  top:85px;
+  right: 5px;
+ }
+
+#networkViz1 {
+  border:3px solid #210345;
+  position:absolute;
+  top:150px;
+  right: 130px;
+  border-radius:30px;
+ }
+
+
+path {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+.personal {
+  stroke: #8CB202;
+}
+
+.correspondance {
+  stroke: #008C74;
+}
+
+.review {
+  stroke: #E5DD00;
+}
+
+.publishing {
+  stroke: #004C66;
+}
+
+.study {
+  stroke: #59A66D;
+}
+
+.rac {
+  stroke: #430040;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: black;
+  stroke-width: 2.5px;
+}
+
+text {
+  fill: #000;
+  font-family: Georgia;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  height: 40px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: #F3FBA0;
+  border: 0px;
+  pointer-events: none;
+  z-index:3;
+}
+
+.node1 circle {
+  stroke: black ;
+  stroke-width: 0px;
+}
+
+input[type=radio] {
+  visibility: hidden;
+}
+.input-group label{
+  display: block;
+  margin-bottom: -20px;
+  margin-left:25px;
+  width: 15px;
+  height: 15px;
+  border-radius: 80px;
+  transition: all .5s ease;
+  cursor: pointer;
+  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+input[type="radio"]:checked+label{
+  border-color: black;
+  border-style: solid;
+}
+label[for=chk1] {
+  background: linear-gradient(to bottom, #430040, #008C74, #008C74,#E5DD00);
+}
+label[for=chk2] {
+  background-color: #8CB202;
+}
+label[for=chk3] {
+  background-color: #008C74;
+}
+label[for=chk4] {
+  background-color: #E5DD00;
+}
+label[for=chk5] {
+  background-color: #004C66;
+}
+label[for=chk6] {
+  background-color: #59A66D;
+}
+label[for=chk7] {
+  background-color: #430040;
+}
+.buttons{
+  margin-left:30px;
+  margin-right:200px;
+  display:inline-block;
+  width: 120px;
+}
+
+.legend_list { list-style: none; }
+.legend_list li { float: left; margin-right: 10px; }
+.legend_list .novels { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+.legend_list .actors { border: 1px solid #ccc; float: left; border-radius: 7px; width: 12px; height: 12px; margin: 2px; }
+.legend_list #people { background-color: #9febf5; }
+.legend_list #personnages { background-color: #9ff5cf; }
+.legend_list #woolf { background-color: #112F41; }
+.legend_list #huxley { background-color: #068587; }
+.legend_list #maugham { background-color: #4FB99F; }
+.legend_list #sitwell { background-color: #F2C434; }
+.legend_list #lawrence { background-color: #ED553B; }
+
+#text{
+  display: none;
+  text-align:justify;
+}
+
+#text1{
+  display: none;
+  text-align:justify;
+}
+
